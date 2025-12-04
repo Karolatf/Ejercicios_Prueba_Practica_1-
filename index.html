@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Evaluación - Programación JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Centro Industrial de Mantenimiento Integral</h1>
+                <p class="subtitle">INSTRUMENTO DE EVALUACIÓN - Versión: 04</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Código del INSTRUMENTO:</span>
+                        <span class="info-value">3233198-233104-3</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Fecha:</span>
+                        <span class="info-value">03-12-2025</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Programa:</span>
+                        <span class="info-value">Técnico en programación de software</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Ficha:</span>
+                        <span class="info-value">3233198</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navegacion -->
+        <nav class="navigation">
+            <h2 class="nav-title">Seleccione un ejercicio para ejecutar</h2>
+            <div class="exercise-grid">
+                <!-- Ejercicio 1 -->
+                <div class="exercise-card" onclick="showExercise(1)">
+                    <div class="exercise-number">01</div>
+                    <h3 class="exercise-title">Validación de Asistencia</h3>
+                    <p class="exercise-desc">Sistema de verificación de estudiantes inscritos en un curso</p>
+                </div>
+
+                <!-- Ejercicio 2 -->
+                <div class="exercise-card" onclick="showExercise(2)">
+                    <div class="exercise-number">02</div>
+                    <h3 class="exercise-title">Inventario de Tienda</h3>
+                    <p class="exercise-desc">Control de stock y estado crítico de productos</p>
+                </div>
+
+                <!-- Ejercicio 3 -->
+                <div class="exercise-card" onclick="showExercise(3)">
+                    <div class="exercise-number">03</div>
+                    <h3 class="exercise-title">Análisis de Calificaciones</h3>
+                    <p class="exercise-desc">Cálculo de promedio y categorización de rendimiento</p>
+                </div>
+
+                <!-- Ejercicio 4 -->
+                <div class="exercise-card" onclick="showExercise(4)">
+                    <div class="exercise-number">04</div>
+                    <h3 class="exercise-title">Ordenamiento de Precios</h3>
+                    <p class="exercise-desc">Organización y análisis de precios de productos</p>
+                </div>
+
+                <!-- Ejercicio 5 -->
+                <div class="exercise-card" onclick="showExercise(5)">
+                    <div class="exercise-number">05</div>
+                    <h3 class="exercise-title">Validación de Usuarios</h3>
+                    <p class="exercise-desc">Sistema de permisos según roles de usuario</p>
+                </div>
+
+                <!-- Ejercicio 6 -->
+                <div class="exercise-card" onclick="showExercise(6)">
+                    <div class="exercise-number">06</div>
+                    <h3 class="exercise-title">Cálculo de Nómina</h3>
+                    <p class="exercise-desc">Sistema modular de salarios y deducciones</p>
+                </div>
+
+                <!-- Ejercicio 7 -->
+                <div class="exercise-card" onclick="showExercise(7)">
+                    <div class="exercise-number">07</div>
+                    <h3 class="exercise-title">Registro de Productos</h3>
+                    <p class="exercise-desc">Sistema dinámico sin duplicados usando rest</p>
+                </div>
+
+                <!-- Ejercicio 8 -->
+                <div class="exercise-card" onclick="showExercise(8)">
+                    <div class="exercise-number">08</div>
+                    <h3 class="exercise-title">Búsqueda en Catálogo</h3>
+                    <p class="exercise-desc">Filtrado avanzado de cursos con callbacks</p>
+                </div>
+
+                <!-- Ejercicio 9 -->
+                <div class="exercise-card" onclick="showExercise(9)">
+                    <div class="exercise-number">09</div>
+                    <h3 class="exercise-title">Procesamiento de Pagos</h3>
+                    <p class="exercise-desc">Validación automática de transacciones</p>
+                </div>
+
+                <!-- Ejercicio 10 -->
+                <div class="exercise-card" onclick="showExercise(10)">
+                    <div class="exercise-number">10</div>
+                    <h3 class="exercise-title">Fusión de Usuarios</h3>
+                    <p class="exercise-desc">Unificación de sistemas con operador spread</p>
+                </div>
+
+                <!-- Ejercicio 11 -->
+                <div class="exercise-card" onclick="showExercise(11)">
+                    <div class="exercise-number">11</div>
+                    <h3 class="exercise-title">Resumen de Mensajes</h3>
+                    <p class="exercise-desc">Extracción de datos con destructuración</p>
+                </div>
+
+                <!-- Ejercicio 12 -->
+                <div class="exercise-card" onclick="showExercise(12)">
+                    <div class="exercise-number">12</div>
+                    <h3 class="exercise-title">Gestión de Pacientes</h3>
+                    <p class="exercise-desc">Priorización médica con resolución de empates</p>
+                </div>
+
+                <!-- Ejercicio 13 -->
+                <div class="exercise-card" onclick="showExercise(13)">
+                    <div class="exercise-number">13</div>
+                    <h3 class="exercise-title">Control de Gastos</h3>
+                    <p class="exercise-desc">Análisis financiero y alertas de desbalance</p>
+                </div>
+
+                <!-- Ejercicio 14 -->
+                <div class="exercise-card" onclick="showExercise(14)">
+                    <div class="exercise-number">14</div>
+                    <h3 class="exercise-title">Evaluación de Proyectos</h3>
+                    <p class="exercise-desc">Sistema modular con callbacks de análisis</p>
+                </div>
+
+                <!-- Ejercicio 15 -->
+                <div class="exercise-card" onclick="showExercise(15)">
+                    <div class="exercise-number">15</div>
+                    <h3 class="exercise-title">Recomendación de Cursos</h3>
+                    <p class="exercise-desc">Sistema inteligente basado en comportamiento</p>
+                </div>
+
+                <!-- Ejercicio 16 -->
+                <div class="exercise-card" onclick="showExercise(16)">
+                    <div class="exercise-number">16</div>
+                    <h3 class="exercise-title">Alerta de Red Social</h3>
+                    <p class="exercise-desc">Detección de usuarios sospechosos</p>
+                </div>
+
+                <!-- Ejercicio 17 -->
+                <div class="exercise-card" onclick="showExercise(17)">
+                    <div class="exercise-number">17</div>
+                    <h3 class="exercise-title">Inventarios Dinámicos</h3>
+                    <p class="exercise-desc">Sistema completo de gestión y reportes</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal para mostrar detalles del ejercicio -->
+        <div id="exerciseModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle" class="modal-title">Ejercicio</h2>
+                <div id="modalDescription" class="modal-description"></div>
+                <div class="modal-actions">
+                    <button class="btn-execute" onclick="executeExercise()">
+                        <span class="btn-icon">▶</span>
+                        Ejecutar en Consola
+                    </button>
+                    <button class="btn-close" onclick="closeModal()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text"><strong>Instructor:</strong> John Freddy Becerra Castellanos</p>
+            <p class="footer-text">Centro Industrial de Mantenimiento Integral - SENA</p>
+        </footer>
+    </div>
+    <script src="estilos_html.js"></script>
+</body>
+</html>

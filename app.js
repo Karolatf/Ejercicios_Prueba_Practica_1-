@@ -31,7 +31,7 @@ console.log("\nPRUEBAS DE EJERCICIOS - TECNICO EN PROGRAMACION\n\n");
 console.log("EJERCICIO 1: VALIDACION DE ASISTENCIA\n");
 const estudiantes = ["Luis", "Maria", "Kevin", "Nicolle", "Santiago", "Sebastian", "Geraldo", "Wilmer", "Manuel", "Isabella", "Paulo"];
 console.log("Lista de estudiantes inscritos:", estudiantes.join(", "));
-const nombreBuscado = prompt("Ingrese el nombre del aprendiz a validar: \n");
+const nombreBuscado = prompt("Ingrese el nombre del aprendiz a validar: ");
 const resultado1 = validarAsistencia(estudiantes, nombreBuscado);
 console.log("\n" + resultado1);
 
